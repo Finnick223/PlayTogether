@@ -1,0 +1,14 @@
+.next
+node_modules
+.cache
+.husky
+.prettierignore
+.stylelintignore
+.eslintignore
+package-lock.json
+public
+next-env.d.ts
+next.config.ts
+tailwind.config.ts
+lintstagedrc
+postcss.config.mjs
