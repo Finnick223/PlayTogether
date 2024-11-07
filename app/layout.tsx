@@ -145,8 +145,8 @@ export default function RootLayout({
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
-          <Button variant={'outline'} className='ml-auto'>
-            Login
+          <Button variant={'outline'} asChild className='ml-auto'>
+            <Link href='/auth/login'>Login</Link>
           </Button>
         </NavigationMenu>
         {children}
