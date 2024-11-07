@@ -118,28 +118,28 @@ export default function RootLayout({
           <NavigationMenuList className='hidden sm:flex sm:flex-row md:space-x-8'>
             <NavigationMenuItem>
               <Link href='/'>
-                <NavigationMenuLink>
+                <NavigationMenuLink asChild>
                   <Button variant={'ghost'}>Play</Button>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href='/'>
-                <NavigationMenuLink>
+                <NavigationMenuLink asChild>
                   <Button variant={'ghost'}>Discover</Button>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href='/'>
-                <NavigationMenuLink>
+                <NavigationMenuLink asChild>
                   <Button variant={'ghost'}>Gallery</Button>
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href='/'>
-                <NavigationMenuLink>
+                <NavigationMenuLink asChild>
                   <Button variant={'ghost'}>Updates</Button>
                 </NavigationMenuLink>
               </Link>
@@ -150,10 +150,10 @@ export default function RootLayout({
           </Button>
         </NavigationMenu>
         {children}
+        <footer className='flex w-screen justify-center bg-zinc-700 px-6 py-3'>
+          footer
+        </footer>
       </body>
-      <footer className='flex w-screen justify-center bg-zinc-700 px-6 py-3'>
-        footer
-      </footer>
     </html>
   )
 }
