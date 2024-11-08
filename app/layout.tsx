@@ -1,16 +1,17 @@
 import { Button } from '@/components/ui/button'
 import {
-  Link,
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from '@radix-ui/react-navigation-menu'
+} from '@/components/ui/navigation-menu'
+import { ApolloWrapper } from '@/lib/apollo-wrapper'
 import { Menu } from 'lucide-react'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import Link from 'next/link'
 import { ReactNode } from 'react'
 import './globals.css'
 
@@ -149,7 +150,9 @@ export default function RootLayout({
             <Link href='/auth/login'>Login</Link>
           </Button>
         </NavigationMenu>
-        {children}
+        <main>
+          <ApolloWrapper>{children}</ApolloWrapper>
+        </main>
         <footer className='flex w-screen justify-center bg-zinc-700 px-6 py-3'>
           footer
         </footer>
