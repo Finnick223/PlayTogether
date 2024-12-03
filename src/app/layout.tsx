@@ -14,7 +14,12 @@ export default function RootLayout({
 }>) {
    return (
       <html lang='en'>
-         <body className={`antialiased`}>{children}</body>
+         <body className={`antialiased`}>
+            <main>{children}</main>
+            <footer className='flex w-screen justify-center bg-zinc-700 py-3'>
+               footer
+            </footer>
+         </body>
       </html>
    );
 }
