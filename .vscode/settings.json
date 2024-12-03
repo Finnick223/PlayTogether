@@ -1,13 +1,13 @@
 {
-  "files.autoSave": "onFocusChange",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "always",
-    "source.addMissingImports": "always"
-  },
-  "typescript.preferences.autoImportFileExcludePatterns": [
-    "@radix-ui",
-    "postcss"
-  ]
+   "files.autoSave": "onFocusChange",
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
+   "editor.formatOnSave": true,
+   "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+      "source.addMissingImports": "always"
+   },
+   "typescript.preferences.autoImportFileExcludePatterns": [
+      "@radix-ui",
+      "postcss"
+   ]
 }
