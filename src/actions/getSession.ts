@@ -13,5 +13,8 @@ export async function getSession() {
       session.isLoggedIn = false;
    }
 
-   return session;
+   return {
+      accessToken: session.accessToken || null,
+      isLoggedIn: session.isLoggedIn || false,
+   };
 }
